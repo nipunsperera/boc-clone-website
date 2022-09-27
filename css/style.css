@@ -7,7 +7,13 @@
 
 }
 
-.clear-fix{
+.clearfix{
+    clear: both;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
     clear: both;
 }
 
@@ -44,3 +50,212 @@ h6{
 }
 
 /* -------------------------Layout------------------------- */
+
+header #app-row{
+    /* background-color: red; */
+    height: 80px;
+}
+
+header #nav-row{
+    background-color: #231f20;
+}
+
+header #mis-row{
+    background-color: #ffde00;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#app-row>.container{
+    /* background-color: lightblue; */
+    height: 100%;
+    padding: 10px 0;
+}
+
+#app-row>.container>#boc-logo{
+    float: left;
+    height: 60px;
+}
+
+#app-row>.container>.wrapper{
+    float: right;
+    /* background-color: purple; */
+    width: 70%;
+    height: 100%;
+}
+
+#app-row>.container>.wrapper>.row:first-child{
+    /* background-color: rgb(202, 130, 130);    */
+}
+
+#app-row>.container>.wrapper>.row:last-child{
+    /* background-color: rgb(228, 211, 211);    */
+}
+
+#nav-lag{
+    float: left;
+        
+    
+}
+
+.wrapper>.row:first-child{
+    padding-bottom: 10px;
+}
+#nav-lang>li{
+    float: right;
+    padding-left: 20px;
+}
+
+#nav-lang>li>a{
+    font-size: 0.8rem;
+    color: black;
+    text-decoration: none;
+}
+
+#nav-lang>li>a:hover{
+    text-decoration: underline;
+    color: #ff9d1d;
+}
+
+#smi-wrapper{
+    float: right;
+    /* background-color: yellowgreen; */
+}
+#nav-web{
+    /* background-color: yellow; */
+    float: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+}
+
+
+
+#nav-web>li{
+    float: left;
+    padding-right: 25px;
+    
+}
+
+
+
+#nav-web>li>a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: black;
+}
+
+#nav-web>li:hover{
+    text-decoration: underline;
+}
+
+#smi-wrapper>ul>li{
+    
+    float: left;
+    padding: 5px;
+    margin-left: 8px;
+    /* background-color: wheat; */
+
+    
+}
+
+#smi-wrapper>ul>li>a>ion-icon{
+    font-size: 1rem;
+    color: white; 
+    padding: 8px;
+}
+
+#smi-wrapper>ul>li>a>#facebook{
+    background-color: #3f4da1;
+}
+#smi-wrapper>ul>li>a>#twitter{
+    background-color: #57a0d7;
+}
+#smi-wrapper>ul>li>a>#linkedin{
+    background-color: #57a0d7;
+}
+#smi-wrapper>ul>li>a>#youtube{
+    background-color: #d74527;
+}
+
+#smi-wrapper>ul>li>a{
+    color: black;
+}
+
+#nav-row{
+    background-color: #231f20;
+
+}
+
+#web-nav li{
+    float: left;
+    
+    
+}
+
+#web-nav>li>a{
+    font-size: 0.8rem;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+}
+
+#web-nav>li>a:hover{
+    background-color: #ff9d1e;
+    color: black;
+    text-decoration: none;
+}
+
+#web-nav>li>a:hover::after{
+    
+    position: absolute;
+    display: block;
+    content: "";
+    border-top: 6px solid #ff9d1e;
+    border-left: 6px solid transparent ;
+    border-right: 6px solid transparent ;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+
+}
+
+#mis-row>.container>button{
+    
+    width: fit-content;
+    height: 38px;
+    padding: 0 10px 0 10px;
+    border: none;
+    border-bottom: 2px solid #0f027b;
+    background-color: #107ece;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transition: background-color 500ms;
+    
+}
+
+#mis-row>.container>button>a{
+    color: white;
+    text-decoration: none;
+}
+
+
+#mis-row>.container{
+    text-align: right;
+}
+
+
+#mis-row>.container>button:hover{
+    cursor: pointer;
+    background-color: #0865a9;
+}
+
+
+
