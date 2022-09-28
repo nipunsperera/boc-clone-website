@@ -62,6 +62,12 @@ header #nav-row{
 
 header #mis-row{
     background-color: #ffde00;
+    position: sticky;
+    width: 100%;    
+}
+
+main{
+    padding-top: 46px;
 }
 
 .container{
@@ -259,3 +265,240 @@ header #mis-row{
 
 
 
+/* ------------------Footer--------------------- */
+
+footer #copyright-row{
+   background-color: #ffde00;
+ 
+}
+
+footer #copyright-row{
+    padding: 16px 0;
+    color: #515254;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+footer>.row .col{
+    width: 25%;
+    height: 215px;
+    padding-top: 10px;
+}
+
+footer>.row .col:first-child{
+    background-color: #808285;
+}
+
+footer>.row .col:nth-child(2){
+    background-color: #808285;
+}
+
+footer>.row .col:nth-child(3){
+    background-color: #808285;
+}
+
+footer>.row .col:last-child{
+    background-color: #515254;
+}
+
+footer .col{
+    float: left;
+    width: 25%;
+}
+
+footer .col h3{
+    padding-bottom: 16px;
+    color: white;
+}
+
+footer .row{
+    height: 215px;
+    background-color: #808285;
+    position: relative;
+}
+
+footer>.row .col ul li{
+    line-height: 1.2rem;
+}
+footer>.row .col ul li a:hover{
+    color:#ffde00;
+}
+
+footer>.row .col ul li a{
+    font-size: 0.75rem;
+    color: white;
+    text-decoration: none;
+}
+
+footer>.row .col:last-of-type{
+    position: relative;
+    padding-left: 15px;
+    color: white;
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    z-index: 1;
+}
+
+footer>.row .col:last-of-type span{
+    padding-left: 23px;
+}
+
+footer>.row::after{
+    content: "";
+    display: block;
+    height: 100%;
+    background-color: #515254;
+    position: absolute;
+    width: 25%;
+    right: 0;
+    top:0;
+    bottom: 0;
+    
+}    
+
+
+/* -------------------Aside------------------------------ */
+
+aside{
+    background-color: black;
+    width: fit-content;
+    position: fixed;
+    border-radius: 4px 4px 0 0;
+    padding: 5px;
+    transform: rotate(270deg);
+    right: -42px;
+    bottom: 25%;
+    z-index: 9999999;
+    
+}
+
+aside ion-icon{
+    position: relative;
+    font-size: 0.8rem;
+    color:#1f1f1f;
+    background-color: rgb(255, 217, 0);
+    border-radius: 100%;
+    padding: 4px;
+    vertical-align: middle;
+    transform: rotate(-270deg);
+    
+
+}
+
+aside a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 10px 10px 20px 10px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+aside:hover{
+    padding-right: 11px;
+}
+
+aside ion-icon::before{
+    display: block;
+    content: "";
+    background-color: #ffdd00b2;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes wave{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(10);
+        opacity: 0.5;
+    }
+}
+
+/* -------------------Main------------------------------ */
+
+main>#row-1>.container{
+    height: 90px;
+}
+
+
+main>#row-1>.container>#flags{
+    /* background-color: red; */
+    float: left;
+    width: 75%;
+    padding: 20px 10px 0;
+    height: 100%;
+    
+}
+main>#row-1>.container>#boc-card-offers{
+    /* background-color: green; */
+    float: right;
+    width: 25%;
+    padding: 20px 10px 0;
+    height: 100%
+}
+
+main>#row-1>.container>#flags>ul>li>h3{
+    font-size: 18px;
+    width: fit-content;
+    
+    
+
+}
+
+main>#row-1>.container>#flags>ul>li{
+    float: left;
+    width: 20%;
+    text-align: right;
+    /* background-color: yellow; */
+    /* border: 1px solid black; */
+
+}
+main>#row-1>.container>#flags>ul>li span{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.7rem;
+
+    
+
+}
+
+main>#row-1>.container>#flags>ul>li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+
+main>#row-1>.container>#flags>ul>li a img{
+    border: 3px solid transparent;
+}
+main>#row-1>.container>#flags>ul>li a:hover img{
+   border: 3px solid #ffde00;
+   box-shadow: 0px 0px 10px #ddd;
+   transition: all 0.2s ease-out;
+
+    
+}
+
+main>#row-1>.container>#flags>ul>li a:hover{
+    color: #23527c;
+    text-decoration: underline;
+}
