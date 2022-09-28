@@ -82,34 +82,36 @@
         <div id="row-2">
             <div class="container clearfix">
                 <div id="slide-show" class="clearfix">
-                    <div id="slide1" class="slide">
-                        <a class="prev" href="#slide6"><ion-icon name="chevron-back-outline"></ion-icon></a>
-                        <a class="next" href="#slide2"><ion-icon name="chevron-forward-outline"></ion-icon></a>
-                    </div>
-
-                    <div id="slide2" class="slide">
-                        <a class="prev" href="#slide1"><ion-icon name="chevron-back-outline"></ion-icon></a>
-                        <a class="next" href="#slide3"><ion-icon name="chevron-forward-outline"></ion-icon></a>
-                    </div>
-
-                    <div id="slide3" class="slide">
-                        <a class="prev" href="#slide2"><ion-icon name="chevron-back-outline"></ion-icon></a>
-                        <a class="next" href="#slide4"><ion-icon name="chevron-forward-outline"></ion-icon></a>
-                    </div>
-
-                    <div id="slide4" class="slide">
-                        <a class="prev" href="#slide3"><ion-icon name="chevron-back-outline"></ion-icon></a>
-                        <a class="next" href="#slide5"><ion-icon name="chevron-forward-outline"></ion-icon></a>
-                    </div>
-
-                    <div id="slide5" class="slide">
-                        <a class="prev" href="#slide4"><ion-icon name="chevron-back-outline"></ion-icon></a>
-                        <a class="next" href="#slide6"><ion-icon name="chevron-forward-outline"></ion-icon></a>
-                    </div>
-
-                    <div id="slide6" class="slide">
-                        <a class="prev" href="#slide5"><ion-icon name="chevron-back-outline"></ion-icon></a>
-                        <a class="next" href="#slide1"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    <div id="slide-wrapper">
+                        <div id="slide1" class="slide">
+                            <a class="prev" href="#slide6"><ion-icon name="chevron-back-outline"></ion-icon></a>
+                            <a class="next" href="#slide2"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        </div>
+    
+                        <div id="slide2" class="slide">
+                            <a class="prev" href="#slide1"><ion-icon name="chevron-back-outline"></ion-icon></a>
+                            <a class="next" href="#slide3"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        </div>
+    
+                        <div id="slide3" class="slide">
+                            <a class="prev" href="#slide2"><ion-icon name="chevron-back-outline"></ion-icon></a>
+                            <a class="next" href="#slide4"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        </div>
+    
+                        <div id="slide4" class="slide">
+                            <a class="prev" href="#slide3"><ion-icon name="chevron-back-outline"></ion-icon></a>
+                            <a class="next" href="#slide5"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        </div>
+    
+                        <div id="slide5" class="slide">
+                            <a class="prev" href="#slide4"><ion-icon name="chevron-back-outline"></ion-icon></a>
+                            <a class="next" href="#slide6"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        </div>
+    
+                        <div id="slide6" class="slide">
+                            <a class="prev" href="#slide5"><ion-icon name="chevron-back-outline"></ion-icon></a>
+                            <a class="next" href="#slide1"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        </div>
                     </div>
                 </div>
                 <div id="nav">
@@ -144,6 +146,45 @@
                         </a></li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+        <div id="row-3">
+            <div class="container clearfix">
+                <div class="col">
+                    <div class="wrapper">
+                        <img src="https://boc.lk/image/data/2021-New-Look/savings.jpg" alt="">
+                        <div class="topic">Savings</div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div calss="wrapper">
+                        <img src="https://boc.lk/image/data/2021-New-Look/Loans.jpg" alt="">
+                        <div class="topic">Loans</div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wrapper">
+                        <img src="https://boc.lk/image/data/2021-New-Look/remit.jpg" alt="">
+                        <div class="topic">Remittances</div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="wrapper">
+                        <img src="https://boc.lk/image/data/2021-New-Look/Digital.jpg" alt="">
+                        <div class="topic">Digital Banking</div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row-4" >
+            <div class="container clearfix">
+                <div><p>CALL CENTER</p><p><ion-icon name="call"></ion-icon><strong> 1975</strong></p></div>
+                <div><a href=""><img src="https://www.boc.lk/catalog/view/theme/default/images/boc_sahana_home-button_270x60.jpg"></a></div>
+                <div><p>BRANCH / ATM LOCATOR</p><p>648 Branches 737 ATMs 159 CDMs 525 CRMs</p></div>
             </div>
         </div>
     </main>
@@ -198,9 +239,14 @@
     </footer>
 
     <aside>
-        <a href=""><ion-icon name="chatbubble"></ion-icon> Chat Now</a>
-        
+        <a href=""><ion-icon name="chatbubble"></ion-icon> Chat Now</a>       
     </aside>
+
+    <section id="popup">
+        <div id="close-wrapper" onclick="document.querySelector('#popup').style.display = 'none';"><ion-icon name="close-circle-outline"></ion-icon>Close</div>
+        <p>This is not the original website of Bank of Ceylon and this site was only created to test the HTML and CSS knowlege I learnt.</p>
+        
+    </section>
 
 </body>
 </html>

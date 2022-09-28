@@ -69,6 +69,7 @@ header #mis-row{
 
 main{
     padding-top: 46px;
+    padding-bottom: 16px;
 }
 
 .container{
@@ -600,26 +601,30 @@ main>#row-2>.container>#slide-show>#slides>#right-arrow>#arrow-head>ion-icon{
 
  #slide-show{
     position: relative;
-    margin-top:20px ;
-    padding: 10px 0;
+    margin-top:0;
+    padding: 0 0 10px 10px;
     height: 388px;
-    white-space: nowrap; /*  */
+    white-space: nowrap;
     overflow: hidden;
-
+    /* overflow-x: scroll; */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    
  }
 
- .slide-wrapper{
-    width: calc(100% * 6);
-    height: 100%;
- }
+ 
 
  .slide{
     position: absolute;
+    display: flex;
     background-repeat: no-repeat;
     height: 388px;
     background-size: contain;
     background-position: center;
     width: 100%;
+
+    scroll-snap-align: center;
+
     
     
  } 
@@ -681,4 +686,178 @@ main>#row-2>.container>#slide-show>#slides>#right-arrow>#arrow-head>ion-icon{
  #slide6{
     background-image: url(https://boc.lk/image/data/Banner/power-branch-close-2022-En-1.jpg);
     left: 500%;
+}
+
+#slide-wrapper{
+    width: 100%;
+    position: relative;
+    animation-name: slider-animation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider-animation{
+    0%,10%{
+        left: 0;
+    }
+
+    16%,26%{
+        left: 0;
+    }
+
+    32%,58%{
+        left: -200%;
+    }
+
+    64%,76%{
+        left: -300%;
+    }
+
+    82%,94%{
+        left: -400%;
+    }
+
+    100%{
+        left: -500%;
+    }
+
+}
+
+#row-3{
+    padding-top: 15px;
+    height: 300px;
+}
+
+#row-3 .col{
+    height: 180px;
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    background-clip: content-box;
+    
+}
+
+#row-3 .col div{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#row-3 .col:first-child{
+    background-color: red;
+    /* background-image: url(https://boc.lk/image/data/2021-New-Look/savings.jpg); */
+}
+
+#row-3 .col:nth-child(2){
+    background-color: green;
+    /* background-image: url(https://boc.lk/image/data/2021-New-Look/Loans.jpg); */
+}
+#row-3 .col:nth-child(3){
+    background-color: blue;
+    /* background-image: url(https://boc.lk/image/data/2021-New-Look/remit.jpg); */
+}
+#row-3 .container>.col:last-child{
+    background-color: orange;
+    /* background-image: url(https://boc.lk/image/data/2021-New-Look/Digital.jpg); */
+}
+
+#row-3 .container .col .wrapper img{
+    width: 100%;
+}
+
+
+main #row-4 .container div{
+    float: left;
+    height: 67px;
+}
+
+
+
+main #row-4 .container div:first-child{
+    text-align: right;
+    /* background-color: red; */
+    width: 25%;
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+
+main #row-4 .container div:first-child ion-icon{
+    color: #8a8a8a;
+    margin-left: 12px;
+}
+    
+
+main #row-4 .container div:first-child p:first-child{
+    margin-bottom: 10px;
+}
+
+main #row-4 .container div:nth-child(2){
+    padding: 0 15px 0 15px;
+    /* background-color: green; */
+    width: 50%;
+    text-align: center;
+}
+main #row-4 .container div:nth-child(3){
+    /* background-color: orange; */
+    width: 25%;
+    text-align: center;
+}
+
+
+
+main #row-4 .container div:nth-child(3) p{
+    text-align: right;
+    color: #1f1f1f;
+}
+
+main #row-4 .container div:nth-child(3) p:first-child{
+    font-size: 18px;
+    color: #1f1f1f;
+    margin-bottom: 10px;
+}
+
+main #row-4 .container div:nth-child(3) p:last-child{
+    font-size: 12px;
+    padding-top: 10px;
+    color: #808285;
+}
+
+main #row-4 .container div:nth-child(2) img{
+    width: 270px;
+    height: 60px;
+}
+
+#popup{
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    width: 450px;
+    background-color: #8a8a8ade;
+    z-index: 9999;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 2px 5px 0 rgb(0 0 0 / 28%);
+}
+
+#close-wrapper:hover{
+    color: rgb(255, 255, 255);
+}
+
+#popup p{
+    font-size: 0.9rem;
+    line-height: 1rem;
+    padding-top: 10px;
+}
+
+#close-wrapper{
+    padding: 5px 0;
+    cursor: pointer;
+
+}
+
+#close-wrapper ion-icon{
+    vertical-align: middle;
+    margin-right:5px ;
+    background-color: rgb(187, 12, 12);
+    border-radius: 100%;
+    font-size: 1.2rem;
+    
 }
