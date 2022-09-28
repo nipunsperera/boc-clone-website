@@ -58,11 +58,12 @@ header #app-row{
 
 header #nav-row{
     background-color: #231f20;
+    
+    
 }
 
 header #mis-row{
     background-color: #ffde00;
-    position: sticky;
     width: 100%;    
 }
 
@@ -228,6 +229,7 @@ main{
     left: 50%;
     transform: translateX(-50%);
     top: 100%;
+    
 
 }
 
@@ -431,6 +433,9 @@ aside ion-icon::before{
 
 /* -------------------Main------------------------------ */
 
+/* Row-1 */
+
+
 main>#row-1>.container{
     height: 90px;
 }
@@ -502,3 +507,63 @@ main>#row-1>.container>#flags>ul>li a:hover{
     color: #23527c;
     text-decoration: underline;
 }
+
+/* Row-2 */
+main>#row-2{
+    padding-top: ;
+}
+
+main>#row-2>.container>#slide-show{
+    background-color: lightblue;
+    float: left;
+    width: 75%;
+    height: 387px
+}
+
+main>#row-2>.container>#nav{
+    /* background-color: lightgreen; */
+    float: right;
+    width: 25%;
+    height: 387px
+}
+
+main>#row-2>.container>#nav>ul{
+    border-top:1px solid #ececec;
+}
+
+main>#row-2>.container>#nav>ul>li svg{
+    height: 30px;
+}
+
+main>#row-2>.container>#nav>ul>li{
+    display: table;
+    width: 100%;
+    border-bottom:1px solid #ccc ;
+}
+ 
+
+main>#row-2>.container>#nav>ul>li>a{
+    display: table-row;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+main>#row-2>.container>#nav>ul>li>a>div{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 10px 10px 20px;
+    line-height: 1.1rem;
+}
+main>#row-2>.container>#nav>ul>li>a:hover{
+    background-color: #525252;
+    color: #ff9d1e;
+}
+
+main>#row-2>.container>#nav>ul>li>a:hover svg{
+    fill: #ff9d1e;
+}
+main>#row-2>.container>#nav>ul>li>a>div:first-child{
+    width: 90%;
+}
+
